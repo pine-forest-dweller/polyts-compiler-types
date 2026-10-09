@@ -1,5 +1,5 @@
 /// <reference no-default-lib="true"/>
-/// <reference types="@rbxts/types"/>
+/// <reference types="polyts-types"/>
 
 interface ArrayLike<T> {
 	/**

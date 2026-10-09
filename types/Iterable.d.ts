@@ -1,5 +1,5 @@
 /// <reference no-default-lib="true"/>
-/// <reference types="@rbxts/types"/>
+/// <reference types="polyts-types"/>
 
 type IteratorResult<Yields, Returns = void> = IteratorYieldResult<Yields> | IteratorReturnResult<Returns>;
 
