@@ -91,28 +91,28 @@ type WritablePropertyNames<T> = {
 type WritableProperties<T> = Pick<T, WritablePropertyNames<T>>;
 
 /** Given an Instance `T`, returns a unioned type of all property names. */
-type InstancePropertyNames<T extends RBXObject> = Exclude<
-	ExcludeKeys<T, RBXScriptSignal | Callback | symbol>,
+type InstancePropertyNames<T extends NetworkedObject> = Exclude<
+	ExcludeKeys<T, PTSignal | Callback | symbol>,
 	"Changed"
 >;
 
 /** Given an Instance `T`, returns a unioned type of all method names. */
-type InstanceMethodNames<T extends RBXObject> = ExtractKeys<T, Callback>;
+type InstanceMethodNames<T extends NetworkedObject> = ExtractKeys<T, Callback>;
 
 /** Given an Instance `T`, returns a unioned type of all event names. */
-type InstanceEventNames<T extends RBXObject> = ExtractKeys<T, RBXScriptSignal>;
+type InstanceEventNames<T extends NetworkedObject> = ExtractKeys<T, PTSignal>;
 
 /** Given an Instance `T`, returns an object with only properties. */
-type InstanceProperties<T extends RBXObject> = Pick<T, InstancePropertyNames<T>>;
+type InstanceProperties<T extends NetworkedObject> = Pick<T, InstancePropertyNames<T>>;
 
 /** Given an Instance `T`, returns an object with only methods. */
-type InstanceMethods<T extends RBXObject> = Pick<T, InstanceMethodNames<T>>;
+type InstanceMethods<T extends NetworkedObject> = Pick<T, InstanceMethodNames<T>>;
 
 /** Given an Instance `T`, returns an object with only events. */
-type InstanceEvents<T extends RBXObject> = Pick<T, InstanceEventNames<T>>;
+type InstanceEvents<T extends NetworkedObject> = Pick<T, InstanceEventNames<T>>;
 
 /** Given an Instance `T`, returns an object with readonly fields, methods, and events filtered out. */
-type WritableInstanceProperties<T extends RBXObject> = WritableProperties<InstanceProperties<T>>;
+type WritableInstanceProperties<T extends NetworkedObject> = WritableProperties<InstanceProperties<T>>;
 
 /** Returns a union of all the keys of T which do not start with `_nominal_` */
 type ExcludeNominalKeys<T> = {

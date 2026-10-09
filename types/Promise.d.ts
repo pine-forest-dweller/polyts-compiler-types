@@ -594,8 +594,8 @@ interface PromiseConstructor {
 	 * end)
 	 * ```
 	 */
-	fromEvent<T>(this: void, event: RBXScriptSignal<(value: T) => void>, predicate?: (value: T) => boolean): Promise<T>;
-	fromEvent(this: void, event: RBXScriptSignal<() => void>, predicate?: () => boolean): Promise<void>;
+	fromEvent<T>(this: void, event: PTSignal<(value: T) => void>, predicate?: (value: T) => boolean): Promise<T>;
+	fromEvent(this: void, event: PTSignal<() => void>, predicate?: () => boolean): Promise<void>;
 	fromEvent<T>(
 		this: void,
 		event: { Connect: (callback: (value: T) => void) => void },
