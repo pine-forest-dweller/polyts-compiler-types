@@ -1,5 +1,5 @@
 /// <reference no-default-lib="true"/>
-/// <reference types="@polyts/types"/>
+/// <reference types="@polytoria-ts/types"/>
 
 type IteratorResult<Yields, Returns = void> = IteratorYieldResult<Yields> | IteratorReturnResult<Returns>;
 

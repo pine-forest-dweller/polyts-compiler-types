@@ -1,5 +1,5 @@
 /// <reference no-default-lib="true"/>
-/// <reference types="@polyts/types"/>
+/// <reference types="@polytoria-ts/types"/>
 
 // Based on roblox-lua-promise v3.1.0
 // https://eryn.io/roblox-lua-promise/
