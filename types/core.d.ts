@@ -1,5 +1,5 @@
 /// <reference no-default-lib="true"/>
-/// <reference types="polyts-types"/>
+/// <reference types="@polyts/types"/>
 /// <reference path="Array.d.ts" />
 /// <reference path="callMacros.d.ts" />
 /// <reference path="Iterable.d.ts" />

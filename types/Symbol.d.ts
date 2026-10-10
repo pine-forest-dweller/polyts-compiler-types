@@ -1,5 +1,5 @@
 /// <reference no-default-lib="true"/>
-/// <reference types="polyts-types"/>
+/// <reference types="@polyts/types"/>
 
 interface Symbol {
 	/**

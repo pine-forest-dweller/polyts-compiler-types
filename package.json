@@ -1,6 +1,6 @@
 {
-	"name": "@rbxts/compiler-types",
-	"version": "3.0.0-types.3",
+	"name": "@polyts/compiler-types",
+	"version": "3.0.0-types.4",
 	"description": "",
 	"main": "types/core.d.ts",
 	"types": "types/core.d.ts",
@@ -15,7 +15,7 @@
 	"devDependencies": {
 		"@eslint/compat": "^2.1.1",
 		"@eslint/js": "^10.0.1",
-		"polyts-types": "git+https://github.com/pine-forest-dweller/polyts-types.git",
+		"@polyts/types": "git+https://github.com/pine-forest-dweller/polyts-types.git",
 		"eslint": "^10.10.0",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-no-autofix": "^2.1.0",

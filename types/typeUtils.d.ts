@@ -1,5 +1,5 @@
 /// <reference no-default-lib="true"/>
-/// <reference types="polyts-types"/>
+/// <reference types="@polyts/types"/>
 
 /** Placeholder that sometimes helps force TS to display what you want it to. */
 type _<T> = T;
